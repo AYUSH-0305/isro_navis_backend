@@ -14,103 +14,109 @@ from nltk import word_tokenize, pos_tag, ne_chunk
 from nltk.tree import Tree
 import whisper  # This will now import the correct OpenAI Whisper
 
+_initialized = False
 
-print("[i] Loading MOSDAC documents...")
+def initialize_rag():
+    global retriever, llm, prompt, extract_entities, build_and_save_kg, whisper_model, process_query, nlp
 
-try:
-    text_loader = DirectoryLoader(
-        path='./mosdac_data/processed',
-        glob='**/*.txt',
-        loader_cls=lambda path: TextLoader(path, encoding='utf-8'),
-        show_progress=True
-    )
-    text_docs = text_loader.load()
-    if not text_docs:
-        print("[!] No text documents loaded from ./mosdac_data/processed")
-except Exception as e:
-    raise RuntimeError(f"[FATAL] Failed to load text documents: {e}")
+    if getattr(initialize_rag, "_done", False):
+        return
+    initialize_rag._done = True
 
-try:
-    pdf_loader = DirectoryLoader(
-        path='./mosdac_data/processed',
-        glob='**/*.pdf',
-        loader_cls=PyMuPDFLoader,
-        show_progress=True
-    )
-    pdf_docs = pdf_loader.load()
-    if not pdf_docs:
-        print("[!] No PDF documents loaded from ./mosdac_data/processed")
-except Exception as e:
-    raise RuntimeError(f"[FATAL] Failed to load PDF documents: {e}")
+    print("[i] Loading MOSDAC documents...")
 
-all_docs = text_docs + pdf_docs
-if not all_docs:
-    raise RuntimeError("[FATAL] No documents found in ./mosdac_data/processed. Please add .txt or .pdf files.")
-
-print(f"[✓] Loaded {len(all_docs)} documents.")
-
-try:
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=200,
-    )
-    split_docs = text_splitter.split_documents(all_docs)
-    if not split_docs:
-        raise RuntimeError("[FATAL] No document chunks created. Check your input files.")
-except Exception as e:
-    raise RuntimeError(f"[FATAL] Failed to split documents: {e}")
-
-print(f"[✓] Split into {len(split_docs)} chunks.")
-
-try:
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-except Exception as e:
-    raise RuntimeError(f"[FATAL] Failed to load HuggingFaceEmbeddings: {e}")
-
-try:
-    vector_store = Chroma.from_documents(split_docs, embeddings)
-except Exception as e:
-    raise RuntimeError(f"[FATAL] Failed to create Chroma vector store: {e}")
-
-try:
-    retriever = vector_store.as_retriever(search_type="mmr", search_kwargs={"k": 5})
-    if retriever is None:
-        raise RuntimeError("[FATAL] Retriever could not be initialized.")
-except Exception as e:
-    raise RuntimeError(f"[FATAL] Failed to create retriever: {e}")
-
-try:
-    llm = ChatGoogleGenerativeAI(
-        model='gemini-1.5-flash',
-        temperature=0.2,
-        api_key='AIzaSyBlVAGaEchXF46DbcNFE66X6HbbcN4oSXI'
-    )
-    if llm is None:
-        raise RuntimeError("[FATAL] LLM could not be initialized.")
-except Exception as e:
-    raise RuntimeError(f"[FATAL] Failed to initialize LLM: {e}")
-
-try:
-    prompt = PromptTemplate(
-        input_variables=["context", "query"],
-        template=(
-            "You are a knowledgeable assistant. Use both the provided MOSDAC/ISRO context and your own knowledge "
-            "to answer thoroughly. If the question is about a satellite, mention: Name, Function, Launch Date, and Applications. "
-            "If it is about a cyclone or event, mention: Event Name, Date(s), Regions affected, and Organization response.\n\n"
-            "Context:\n{context}\n\nQuestion: {query}\n\nAnswer:"
+    try:
+        text_loader = DirectoryLoader(
+            path='./mosdac_data/processed',
+            glob='**/*.txt',
+            loader_cls=lambda path: TextLoader(path, encoding='utf-8'),
+            show_progress=True
         )
-    )
-    if prompt is None:
-        raise RuntimeError("[FATAL] Prompt could not be initialized.")
-except Exception as e:
-    raise RuntimeError(f"[FATAL] Failed to initialize prompt: {e}")
+        text_docs = text_loader.load()
+        if not text_docs:
+            print("[!] No text documents loaded from ./mosdac_data/processed")
+    except Exception as e:
+        raise RuntimeError(f"[FATAL] Failed to load text documents: {e}")
 
-os.environ["PATH"] += os.pathsep + r"C:/Users/arnav/Downloads/ffmpeg-7.1.1-essentials_build/ffmpeg-7.1.1-essentials_build/bin"
+    try:
+        pdf_loader = DirectoryLoader(
+            path='./mosdac_data/processed',
+            glob='**/*.pdf',
+            loader_cls=PyMuPDFLoader,
+            show_progress=True
+        )
+        pdf_docs = pdf_loader.load()
+        if not pdf_docs:
+            print("[!] No PDF documents loaded from ./mosdac_data/processed")
+    except Exception as e:
+        raise RuntimeError(f"[FATAL] Failed to load PDF documents: {e}")
 
+    all_docs = text_docs + pdf_docs
+    if not all_docs:
+        raise RuntimeError("[FATAL] No documents found in ./mosdac_data/processed. Please add .txt or .pdf files.")
 
-nlp = spacy.load("en_core_web_sm")
-whisper_model = whisper.load_model("base")
+    print(f"[✓] Loaded {len(all_docs)} documents.")
 
+    try:
+        text_splitter = RecursiveCharacterTextSplitter(
+            chunk_size=1000,
+            chunk_overlap=200,
+        )
+        split_docs = text_splitter.split_documents(all_docs)
+        if not split_docs:
+            raise RuntimeError("[FATAL] No document chunks created. Check your input files.")
+    except Exception as e:
+        raise RuntimeError(f"[FATAL] Failed to split documents: {e}")
+
+    print(f"[✓] Split into {len(split_docs)} chunks.")
+
+    try:
+        embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    except Exception as e:
+        raise RuntimeError(f"[FATAL] Failed to load HuggingFaceEmbeddings: {e}")
+
+    try:
+        vector_store = Chroma.from_documents(split_docs, embeddings)
+    except Exception as e:
+        raise RuntimeError(f"[FATAL] Failed to create Chroma vector store: {e}")
+
+    try:
+        retriever = vector_store.as_retriever(search_type="mmr", search_kwargs={"k": 5})
+        if retriever is None:
+            raise RuntimeError("[FATAL] Retriever could not be initialized.")
+    except Exception as e:
+        raise RuntimeError(f"[FATAL] Failed to create retriever: {e}")
+
+    try:
+        llm = ChatGoogleGenerativeAI(
+            model='gemini-1.5-flash',
+            temperature=0.2,
+            api_key='AIzaSyBlVAGaEchXF46DbcNFE66X6HbbcN4oSXI'
+        )
+        if llm is None:
+            raise RuntimeError("[FATAL] LLM could not be initialized.")
+    except Exception as e:
+        raise RuntimeError(f"[FATAL] Failed to initialize LLM: {e}")
+
+    try:
+        prompt = PromptTemplate(
+            input_variables=["context", "query"],
+            template=(
+                "You are a knowledgeable assistant. Use both the provided MOSDAC/ISRO context and your own knowledge "
+                "to answer thoroughly. If the question is about a satellite, mention: Name, Function, Launch Date, and Applications. "
+                "If it is about a cyclone or event, mention: Event Name, Date(s), Regions affected, and Organization response.\n\n"
+                "Context:\n{context}\n\nQuestion: {query}\n\nAnswer:"
+            )
+        )
+        if prompt is None:
+            raise RuntimeError("[FATAL] Prompt could not be initialized.")
+    except Exception as e:
+        raise RuntimeError(f"[FATAL] Failed to initialize prompt: {e}")
+
+    os.environ["PATH"] += os.pathsep + r"C:/Users/arnav/Downloads/ffmpeg-7.1.1-essentials_build/ffmpeg-7.1.1-essentials_build/bin"
+
+    nlp = spacy.load("en_core_web_sm")
+    whisper_model = whisper.load_model("base")
 
 
 def extract_entities(answer_text):
@@ -184,13 +190,5 @@ def process_query(query):
     entities = extract_entities(answer)
     return context, answer, entities
 
-# Do not run any input loop or main code here!
-    docs = retriever.invoke(query)
-    context = "\n".join([doc.page_content for doc in docs])
-    final_prompt = prompt.format(context=context, query=query)
-    response = llm.invoke(final_prompt)
-    answer = response.content.strip()
-    entities = extract_entities(answer)
-    return context, answer, entities
-
-# Do not run any input loop or main code here!
+# Call initialize_rag() once at import time
+initialize_rag()
