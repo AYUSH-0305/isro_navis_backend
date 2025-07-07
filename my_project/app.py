@@ -84,7 +84,7 @@ def load_models():
     except Exception as e:
         logger.error(f"Failed to load RAG components: {str(e)}")
         import traceback
-        traceback.print_exc()  # <--- Add this line to print the full stack trace
+        traceback.print_exc()
         models_loaded = False
 
 # Start loading models in background thread
@@ -133,60 +133,35 @@ async def health_check():
 
 @app.post("/rag", response_model=QueryResponse)
 async def rag(
-    mode: str = Form(..., description="text or voice"),
-    query: Optional[str] = Form(None, description="Query text (if mode=text)"),
-    duration: Optional[int] = Form(5, description="Recording duration in seconds (if mode=voice)")
+    mode: str = Form(..., description="text"),
+    query: Optional[str] = Form(None, description="Query text (required)"),
+    duration: Optional[int] = Form(5, description="(Unused, for compatibility)")
 ):
     """
     Run full RAG pipeline.
-    If mode=text => use the provided query.
-    If mode=voice => record audio on server, transcribe it to query.
+    Only mode=text is supported.
     """
-    
     # Check if models are loaded
     if not models_loaded:
         raise HTTPException(
             status_code=503,
             detail="RAG pipeline is still loading. Please wait a moment and try again."
         )
-    
-    try:
-        # Validate mode
-        if mode not in {"text", "voice"}:
-            raise HTTPException(
-                status_code=400, 
-                detail="mode must be 'text' or 'voice'"
-            )
-        
-        # Handle voice input
-        if mode == "voice":
-            logger.info(f"Recording audio for {duration} seconds...")
-            
-            # Record audio with error handling
-            try:
-                record_audio(filename="input.wav", duration=duration)
-                result = whisper_model.transcribe("input.wav")
-                query = result['text'].strip()
-                logger.info(f"Transcribed query: {query}")
-            except Exception as e:
-                logger.error(f"Voice recording/transcription failed: {str(e)}")
-                raise HTTPException(
-                    status_code=500, 
-                    detail=f"Voice processing failed: {str(e)}"
-                )
-        else:
-            if not query or not query.strip():
-                raise HTTPException(
-                    status_code=400, 
-                    detail="Query text is required for mode=text"
-                )
-            query = query.strip()
 
-        if not query:
+    try:
+        # Only support text mode
+        if mode != "text":
             raise HTTPException(
-                status_code=400, 
-                detail="Could not extract query from input"
+                status_code=400,
+                detail="Only 'text' mode is supported. For voice, use /rag/voice-upload with an audio file."
             )
+
+        if not query or not query.strip():
+            raise HTTPException(
+                status_code=400,
+                detail="Query text is required for mode=text"
+            )
+        query = query.strip()
 
         logger.info(f"Processing query: {query}")
 
@@ -197,7 +172,7 @@ async def rag(
         except Exception as e:
             logger.error(f"RAG pipeline failed: {str(e)}")
             raise HTTPException(
-                status_code=500, 
+                status_code=500,
                 detail=f"RAG processing failed: {str(e)}"
             )
 
@@ -228,7 +203,7 @@ async def rag(
     except Exception as e:
         logger.error(f"Unexpected error in RAG endpoint: {str(e)}")
         raise HTTPException(
-            status_code=500, 
+            status_code=500,
             detail=f"Internal server error: {str(e)}"
         )
 
