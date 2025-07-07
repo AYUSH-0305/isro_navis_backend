@@ -13,8 +13,6 @@ import re
 from nltk import word_tokenize, pos_tag, ne_chunk
 from nltk.tree import Tree
 import whisper  # This will now import the correct OpenAI Whisper
-import sounddevice as sd
-from scipy.io.wavfile import write
 
 
 print("[i] Loading MOSDAC documents...")
@@ -115,13 +113,6 @@ whisper_model = whisper.load_model("base")
 
 
 
-def record_audio(filename="input.wav", duration=5, fs=16000):
-    print("[🎤] Recording... Speak now!")
-    recording = sd.rec(int(duration * fs), samplerate=fs, channels=1, dtype='int16')
-    sd.wait()
-    write(filename, fs, recording)
-    print("[🎤] Recording saved.")
-
 def extract_entities(answer_text):
     entities = set()
     doc = nlp(answer_text)
@@ -185,6 +176,15 @@ def build_and_save_kg(entities, filename="knowledge_graph.png"):
     print(f"[✓] Knowledge graph saved to {filename}")
 
 def process_query(query):
+    docs = retriever.invoke(query)
+    context = "\n".join([doc.page_content for doc in docs])
+    final_prompt = prompt.format(context=context, query=query)
+    response = llm.invoke(final_prompt)
+    answer = response.content.strip()
+    entities = extract_entities(answer)
+    return context, answer, entities
+
+# Do not run any input loop or main code here!
     docs = retriever.invoke(query)
     context = "\n".join([doc.page_content for doc in docs])
     final_prompt = prompt.format(context=context, query=query)
