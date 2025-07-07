@@ -36,7 +36,6 @@ prompt = None
 extract_entities = None
 build_and_save_kg = None
 whisper_model = None
-record_audio = None
 models_loaded = False
 
 # Ensure output directory exists
@@ -56,7 +55,7 @@ class ErrorResponse(BaseModel):
 
 def load_models():
     """Load models in a background thread"""
-    global retriever, llm, prompt, extract_entities, build_and_save_kg, whisper_model, record_audio, models_loaded, process_query
+    global retriever, llm, prompt, extract_entities, build_and_save_kg, whisper_model, models_loaded, process_query
 
     logger.info("Loading RAG pipeline components in background...")
 
@@ -68,7 +67,6 @@ def load_models():
             extract_entities as _extract_entities,
             build_and_save_kg as _build_and_save_kg,
             whisper_model as _whisper_model,
-            record_audio as _record_audio,
             process_query as _process_query,
         )
 
@@ -78,7 +76,6 @@ def load_models():
         extract_entities = _extract_entities
         build_and_save_kg = _build_and_save_kg
         whisper_model = _whisper_model
-        record_audio = _record_audio
         process_query = _process_query
         models_loaded = True
 
