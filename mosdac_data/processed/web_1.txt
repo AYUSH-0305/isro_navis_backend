@@ -1,0 +1,256 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSAT-3DR | Meteorological & Oceanographic Satellite Data Archival Centre
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main Content
+
+
+
+
+-A A +A 
+
+
+
+
+AA
+
+
+
+
+
+
+हिन्दीEnglish
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+Secondary menuSignUp
+Login
+Logout
+  
+
+
+
+
+
+
+Meteorological & Oceanographic Satellite Data Archival Centre
+
+
+
+            Space Applications Centre, ISRO          
+ 
+
+ 
+ 
+
+
+
+
+HomeMissionsINSAT-3DRINSAT-3DKALPANA-1INSAT-3AMeghaTropiquesSARAL-AltiKaOCEANSAT-2OCEANSAT-3INSAT-3DSSCATSAT-1CatalogSatelliteInsitu (AWS)RADARGalleriesSatellite ProductsWeather ForecastOcean ForecastRADAR (DWR)Global Ocean CurrentData AccessOrder DataOpen DataAtmosphereBayesian based MT-SAPHIR rainfallGPS derived Integrated water vapourGSMap ISRO RainMETEOSAT8 Cloud PropertiesLand3D Volumetric TERLS DWRproductInland Water HeightRiver DischargeSoil MoistureOceanGlobal Ocean Surface CurrentHigh Resolution Sea Surface SalinityIndian Mainland Coastal ProductOcean SubsurfaceOceanic Eddies DetectionSea Ice Occurrence ProbabilityWave based Renewable EnergyCal-ValForecastRSS FeedsReportsCalibrationInsituRelativeValidationData QualityWeatherAtlasesToolsSitemapHelp 
+
+
+ 
+
+You are hereHome » Missions » INSAT-3DR
+
+
+
+
+
+INSAT-3DR 
+
+
+
+
+
+
+INSAT-3DR is identical to INSAT-3D in terms of Sensors and products. 
+INSAT or the Indian National Satellite System is a series of multipurpose Geo-stationary satellites launched by ISRO to satisfy the telecommunications, broadcasting, meteorology, and search and rescue needs of India. Commissioned in 1983, INSAT is the largest domestic communication system in the Asia Pacific Region. The satellite is monitored and controlled by Master Control Facilities that exist in Hassan and Bhopal. INSAT-3DR is a multipurpose geosynchronous spacecraft with main meteorological payloads (imager and sounder). The main objectives for this mission are to provide an operational, environmental and storm warning system to protect life and property. INSAT3DR is monitoring the earth’s surface, oceanic observations and also provide data dissemination capabilities. It provides Broadcast Satellite Services (BSS) through two S-band transponders. The data acquisition and processing system is established at Space Applications Centre, Bopal Campus, Ahmedabad, India. The processing of INSAT-3DR data is taken place broadly in four steps.  
+
+Ground receiving system to receive data
+Data Reception (DR) system to generate raw data (L0) files
+Data Processing (DP) system to process L0 data and produce L1B data files (Calibrated and Geo located)
+Product generation and Dissemination system
+
+It is positioned at 740 East Longitude.
+ 
+
+ हिन्दी
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+MissionsINSAT-3DRIntroduction
+Objectives
+SpaceCraft
+Payloads
+Data Products
+Documents
+
+
+ 
+
+
+
+ 
+ 
+
+
+
+
+Search
+
+
+
+Search 
+
+
+
+
+
+ 
+
+
+
+
+Follow Us
+
+ 
+
+
+
+
+
+Website owned and maintained by MOSDAC, Space Applications Centre, Indian Space Research Organisation, Govt. of INDIA.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+Feedback
+About Us
+Contact Us
+Copyright Policy
+Data Access Policy
+Hyperlink Policy
+Privacy Policy
+Website Policies
+Terms & Conditions
+FAQs
+ 
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+ 
+ 
+
+
+
+"Ver 3.0; Last reviewed and updated on
+01 Jul, 2025& Served By:
+Web-Srv-Pri 
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+

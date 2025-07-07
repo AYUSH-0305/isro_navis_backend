@@ -1,0 +1,253 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Oceansat-2 Objectives | Meteorological & Oceanographic Satellite Data Archival Centre
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main Content
+
+
+
+
+-A A +A 
+
+
+
+
+AA
+
+
+
+
+
+
+हिन्दीEnglish
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+Secondary menuSignUp
+Login
+Logout
+  
+
+
+
+
+
+
+Meteorological & Oceanographic Satellite Data Archival Centre
+
+
+
+            Space Applications Centre, ISRO          
+ 
+
+ 
+ 
+
+
+
+
+HomeMissionsINSAT-3DRINSAT-3DKALPANA-1INSAT-3AMeghaTropiquesSARAL-AltiKaOCEANSAT-2OCEANSAT-3INSAT-3DSSCATSAT-1CatalogSatelliteInsitu (AWS)RADARGalleriesSatellite ProductsWeather ForecastOcean ForecastRADAR (DWR)Global Ocean CurrentData AccessOrder DataOpen DataAtmosphereBayesian based MT-SAPHIR rainfallGPS derived Integrated water vapourGSMap ISRO RainMETEOSAT8 Cloud PropertiesLand3D Volumetric TERLS DWRproductInland Water HeightRiver DischargeSoil MoistureOceanGlobal Ocean Surface CurrentHigh Resolution Sea Surface SalinityIndian Mainland Coastal ProductOcean SubsurfaceOceanic Eddies DetectionSea Ice Occurrence ProbabilityWave based Renewable EnergyCal-ValForecastRSS FeedsReportsCalibrationInsituRelativeValidationData QualityWeatherAtlasesToolsSitemapHelp 
+
+
+ 
+
+You are hereHome » Missions » OCEANSAT-2 » Objectives
+
+
+
+
+
+Oceansat-2 Objectives 
+
+
+
+
+
+
+The Indian satellite Oceansat-2 is designed to provide service continuity for operational users of the Ocean Colour Monitor (OCM)instrument on Oceansat-1. It will also enhance the potential of applications in other areas. The main objectives of OceanSat-2 are to study surface winds and ocean surface strata, observation of chlorophyll concentrations, monitoring of phytoplankton blooms, study of atmospheric aerosols and suspended sediments in the water.
+The primary mission objectives of Oceansat-2 are:
+
+To design, develop, launch and operate a three axis stabilized spacecraft carrying an Ocean Colour Monitor and Ku-band Scatterometer,
+To develop / implement algorithms for retrieval of geophysical parameters like wind vector on an operational basis.
+To promote new applications in the areas of ocean studies including prediction of cyclone trajectory, fisheries, coastal zone mapping etc.
+
+Oceansat-2 gathers systematic data for oceanographic, coastal and atmospheric applications. The main objectives of OceanSat-2 are to study surface winds and ocean surface strata, observation of chlorophyll concentrations, monitoring of phytoplankton blooms, study of atmospheric aerosols and suspended sediments in the water.
+Oceansat-2 carries two payloads for ocean related studies, namely, Ocean Colour Monitor (OCM) and Ku-band Pencil Beam Scatterometer. An additional piggy-back payload called ROSA (Radio Occultation Sounder for Atmospheric studies) developed by the Italian Space Agency (ASI) is also included. The major applications of data from Oceansat-2 are identification of potential fishing zones, sea state forecasting, coastal zone studies and inputs for weather forecasting and climatic studies.
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+MissionsOCEANSAT-2Introduction
+Objectives
+SpaceCraft
+Payloads
+Data Products
+Documents
+
+
+ 
+
+
+
+ 
+ 
+
+
+
+
+Search
+
+
+
+Search 
+
+
+
+
+
+ 
+
+
+
+
+Follow Us
+
+ 
+
+
+
+
+
+Website owned and maintained by MOSDAC, Space Applications Centre, Indian Space Research Organisation, Govt. of INDIA.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+Feedback
+About Us
+Contact Us
+Copyright Policy
+Data Access Policy
+Hyperlink Policy
+Privacy Policy
+Website Policies
+Terms & Conditions
+FAQs
+ 
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+ 
+ 
+
+
+
+"Ver 3.0; Last reviewed and updated on
+01 Jul, 2025& Served By:
+Web-Srv-Pri 
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+

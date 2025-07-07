@@ -1,0 +1,137 @@
+Sr.No: 1
+Station Name: Diglipur,Portblair
+State: ANDAMAN & NICOBAR
+Station ID: 15F488
+Station Key: AGROMET18
+Latitude: 13.26
+Longitude: 93.01
+Start Date: 2011-02-15
+End Date: 2016-03-30
+Processing Status: In-Active
+Temporal Resolution: Half Hourly
+
+---
+
+Sr.No: 2
+Station Name: CRIDA Farm,Hayathnagar, Hyderabad
+State: ANDHRA PRADESH
+Station ID: 15F0FF
+Station Key: AGROMET02
+Latitude: 17.34
+Longitude: 78.59
+Start Date: 2010-12-31
+End Date: 2017-12-06
+Processing Status: In-Active
+Temporal Resolution: Half Hourly
+
+---
+
+Sr.No: 3
+Station Name: SDSC, SHAR, Sriharikota
+State: ANDHRA PRADESH
+Station ID: 15F464
+Station Key: AGROMET06
+Latitude: 13.62
+Longitude: 80.23
+Start Date: 2010-12-31
+End Date: 2016-02-14
+Processing Status: In-Active
+Temporal Resolution: Half Hourly
+
+---
+
+Sr.No: 4
+Station Name: Rajendra Agricultural University, PUSA, Samastipur
+State: BIHAR
+Station ID: 15F47F
+Station Key: AGROMET15
+Latitude: 25.98
+Longitude: 85.67
+Start Date: 2010-12-31
+End Date: 2017-06-29
+Processing Status: In-Active
+Temporal Resolution: Half Hourly
+
+---
+
+Sr.No: 5
+Station Name: Rice Research Station, Anand Agricultural University, Nawagam.
+State: GUJARAT
+Station ID: 15F102
+Station Key: AGROMET03
+Latitude: 22.80
+Longitude: 72.57
+Start Date: 2010-12-31
+End Date: 2017-09-19
+Processing Status: In-Active
+Temporal Resolution: Half Hourly
+
+---
+
+Sr.No: 6
+Station Name: Junagadh Agricultural University, Junagadh
+State: GUJARAT
+Station ID: 15F105
+Station Key: AGROMET04
+Latitude: 21.50
+Longitude: 70.44
+Start Date: 2011-04-05
+End Date: 2017-08-17
+Processing Status: In-Active
+Temporal Resolution: Half Hourly
+
+---
+
+Sr.No: 7
+Station Name: Range Office Research Centre, Dhorado, Kutch
+State: GUJARAT
+Station ID: 15F485
+Station Key: AGROMET17
+Latitude: 23.80
+Longitude: 69.50
+Start Date: 2010-12-31
+End Date: 2016-09-16
+Processing Status: In-Active
+Temporal Resolution: Half Hourly
+
+---
+
+Sr.No: 8
+Station Name: Regional Agricultural Research Station, Bijapur.
+State: KARNATAKA
+Station ID: 15F0FC
+Station Key: AGROMET01
+Latitude: 16.78
+Longitude: 75.75
+Start Date: 2011-07-30
+End Date: 2016-09-26
+Processing Status: In-Active
+Temporal Resolution: Half Hourly
+
+---
+
+Sr.No: 9
+Station Name: IISC Bengaluru. (Gopal Pura)
+State: KARNATAKA
+Station ID: 15F518
+Station Key: AGROMET24
+Latitude: 11.76
+Longitude: 76.59
+Start Date: 2012-01-31
+End Date: 2016-04-30
+Processing Status: In-Active
+Temporal Resolution: Half Hourly
+
+---
+
+Sr.No: 10
+Station Name: Zonal Agricultural Research Station, Powerkhed, Hoshangabad
+State: MADHYA PRADESH
+Station ID: 15F46A
+Station Key: AGROMET08
+Latitude: 22.70
+Longitude: 77.74
+Start Date: 2010-12-31
+End Date: 2017-08-06
+Processing Status: In-Active
+Temporal Resolution: Half Hourly

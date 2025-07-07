@@ -1,0 +1,376 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Meteorological & Oceanographic Satellite Data Archival Centre
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to main Content
+
+
+
+
+-A A +A 
+
+
+
+
+AA
+
+
+
+
+
+
+हिन्दीEnglish
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+Secondary menuSignUp
+Login
+Logout
+  
+
+
+
+
+
+
+Meteorological & Oceanographic Satellite Data Archival Centre
+
+
+
+            Space Applications Centre, ISRO          
+ 
+
+ 
+ 
+
+
+
+
+HomeMissionsINSAT-3DRINSAT-3DKALPANA-1INSAT-3AMeghaTropiquesSARAL-AltiKaOCEANSAT-2OCEANSAT-3INSAT-3DSSCATSAT-1CatalogSatelliteInsitu (AWS)RADARGalleriesSatellite ProductsWeather ForecastOcean ForecastRADAR (DWR)Global Ocean CurrentData AccessOrder DataOpen DataAtmosphereBayesian based MT-SAPHIR rainfallGPS derived Integrated water vapourGSMap ISRO RainMETEOSAT8 Cloud PropertiesLand3D Volumetric TERLS DWRproductInland Water HeightRiver DischargeSoil MoistureOceanGlobal Ocean Surface CurrentHigh Resolution Sea Surface SalinityIndian Mainland Coastal ProductOcean SubsurfaceOceanic Eddies DetectionSea Ice Occurrence ProbabilityWave based Renewable EnergyCal-ValForecastRSS FeedsReportsCalibrationInsituRelativeValidationData QualityWeatherAtlasesToolsSitemapHelp 
+
+
+ 
+
+You are hereHome » FAQs
+
+
+
+
+
+Frequently Asked Questions 
+
+
+
+
+
+
+What is MOSDAC?  
+
+
+
+
+MOSDAC is the short form of Meteorological and Oceanographic Satellite Data Archival Center. It is a ISRO data portal which provides data through its web based service https://mosdac.gov.in
+  
+ 
+
+
+How to be a registered user of MOSDAC?  
+
+
+
+There is "SignUp" form available on MOSDAC portal. Pl fill up the form and submit. You will be intimated through e-mail about the approval.
+  
+ 
+
+
+I have registered on MOSDAC . i have received an email for email verification. But when I click the link, I get error message.  
+
+Please copy the Email verification Hyperlink sent on your registered email id and paste it in a new browser window/tab and open the link to verify your email address.
+  
+ 
+
+
+I have received a 'reset password mail' But when I click the link, I get error message.  
+
+Please copy the 'Reset Password Hyperlink' sent on your registered  email id and past it in a new browser window/tab and open the link to reset password.
+  
+ 
+
+
+I get error 'Invalid username or password' even though I provide correct credentials.  
+
+Your account is locked for one hour after 3 unsuccessful login attempts. Please try after one hour.
+  
+ 
+
+
+How to know forgot password?  
+
+
+
+Click Forgot Password link on MOSDAC Login Page. Enter username or email. If valid username/email is entered, user will get an email containing 'Reset Password Hyperlink'. please copy 'Reset Password Hyperlink' and paste it in new browser window/tab and open the link and follow the procedure to reset password.
+  
+ 
+
+
+How to change password?  
+
+
+
+Login with your user name and password. select 'Change Profile'.  Your Profile page will be displayed. Select 'Password' from the left panel of Profile Page. Provide old and new password and click save. Your password will be changed.
+  
+ 
+
+
+I don't have username and password of MOSDAC. Can I download data?  
+
+
+
+Anonymous users (without username and password) can download only open data. In order to download all data from MOSDAC, you need to register on MOSDAC site. There is "SignUp" form available on MOSDAC portal. Pl fill up the form properly and submit. You will be intimated through e-mail about the approval.
+  
+ 
+
+
+How can I get near real time data without data ordering?  
+
+
+
+If you want near real time data, you can place "standing order" from MOSDAC for Satellite data product/in-situ. Login to MOSDAC site and place standing order. A standing order can be placed for a maximum one month duration. After that you can again place the request. This functionality is available for privileged user only.
+  
+ 
+
+
+How in-situ data can be ordered/requested?  
+
+
+
+You are required to be a registered user for ordering the data. Be a registered user by filling up on-line form. Login to MOSDAC site. Select either "In-situ data order". Select the data of your interest.  Place the order . Sign the agreement. A download link will be provided. After clicking here data will be downloaded on your desk through http.
+  
+ 
+
+
+How Ordered and download the satellite data ?   
+
+
+
+
+You are required to be a registered user for ordering the data. Be a registered user by filling up Sing Up form Available on the home page. Login to MOSDAC site with user credentials,  Select  "Satellite data order" . Select the data of your interest.  Add to cart. submit the request. You will be given a request id no. You will be intimated through the mail about readiness of your data. You can also check status of your request from left menu under "My request tab" 
+Your requested data will be uploaded to your SFTP account at sftp://ftp.mosdac.gov.in. You can download data from  sftp://ftp.mosdac.gov.in using your MOSDAC portal user credentials.
+  
+ 
+
+
+Which duration data can be obtained from MOSDAC?  
+
+
+
+To view availability of data Select "Catalog --> Satellite data" from top menu bar. All data products list of a satellite will be displayed, which contains details of the data products viz: abstract, start date, end date, frequency etc.
+  
+ 
+
+
+How many AWS are installed in each state of India?  
+
+
+
+Select  "Catalog --> In-situ --> distribution" from top menu bar, AWS distribution map and no. of AWS installed in each state of India will be displayed.
+  
+ 
+
+
+Which duration data is available for AWS?  
+
+
+
+AWS data is available from Jan 2008 till present date.
+  
+ 
+
+
+How to get description about a data product?  
+
+
+
+Select "Catalog --> Satellite data" from top menu bar. All data products list of a satellite will be displayed, which contains details of the data products viz: abstract, start date, end date, frequency etc.
+  
+ 
+
+
+What datasets are available on MOSDAC?  
+
+
+
+
+Select "Catalog --> Satellite data" from top menu bar. All data products list of a satellite will be displayed. You can change the satellite to view data products of selected satellite.
+Select  "Catalog --> In-situ --> distribution" from top menu bar. All In-situ list will be displayed for which MOSDAC has datasets.
+  
+ 
+
+
+I am a registered user of MOSDAC. When I download L1 data I get the message "Your account is configured to download this data with latency of  3 days. Please select date accordingly." How should I download data?  
+
+
+
+There are two category of users in MOSDAC, NRT users and General users, NRT users have access to real time data. General users are provided access Level-2 and onwards data in NRT and Level-1 data with a latency of 3 days. This message implies that the data product requested by you can't be download in near real time. You can download 3 days old data or you can contact to MOSDAC admin if you want near real time data.
+  
+ 
+ 
+
+
+
+
+
+ 
+ 
+
+
+
+
+Search
+
+
+
+Search 
+
+
+
+
+
+ 
+
+
+
+
+Follow Us
+
+ 
+
+
+
+
+
+Website owned and maintained by MOSDAC, Space Applications Centre, Indian Space Research Organisation, Govt. of INDIA.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+Feedback
+About Us
+Contact Us
+Copyright Policy
+Data Access Policy
+Hyperlink Policy
+Privacy Policy
+Website Policies
+Terms & Conditions
+FAQs
+ 
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+ 
+ 
+
+
+
+"Ver 3.0; Last reviewed and updated on
+01 Jul, 2025& Served By:
+Web-Srv-Pri 
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+FAQ Question: Skip to main Content
+FAQ Question: -A
+FAQ Question: A
+FAQ Question: +A
+FAQ Question: A
+FAQ Question: A
+FAQ Question: Home
+FAQ Question: Missions
+FAQ Question: INSAT-3DR
+FAQ Question: INSAT-3D
+FAQ Question: KALPANA-1
+FAQ Question: INSAT-3A
+FAQ Question: MeghaTropiques
+FAQ Question: SARAL-AltiKa
+FAQ Question: OCEANSAT-2
+FAQ Question: OCEANSAT-3
+FAQ Question: INSAT-3DS
+FAQ Question: SCATSAT-1
+FAQ Question: Catalog
+FAQ Question: Satellite
+FAQ Question: Insitu (AWS)
+FAQ Question: RADAR
+FAQ Question: Galleries
+FAQ Question: Satellite Products
+FAQ Question: Weather Forecast
+FAQ Question: Ocean Forecast
+FAQ Question: RADAR (DWR)
+FAQ Question: Global Ocean Current
+FAQ Question: Data Access
+FAQ Question: Order Data
+FAQ Question: Open Data
+FAQ Question: Atmosphere
+FAQ Question: Bayesian based MT-SAPHIR rainfall
+FAQ Question: GPS derived Integrated water vapour
+FAQ Question: GSMap ISRO Rain
+FAQ Question: METEOSAT8 Cloud Properties
+FAQ Question: Land
+FAQ Question: 3D Volumetric TERLS DWRproduct
+FAQ Question: Inland Water Height
+FAQ Question: River Discharge
+FAQ Question: Soil Moisture
+FAQ Question: Ocean
+FAQ Question: Global Ocean Surface Current
+FAQ Question: High Resolution Sea Surface Salinity
+FAQ Question: Indian Mainland Coastal Product
+FAQ Question: Ocean Subsurface
+FAQ Question: Oceanic Eddies Detection
+FAQ Question: Sea Ice Occurrence Probability
+FAQ Question: Wave based Renewable Energy
+FAQ Question: Cal-Val
+FAQ Question: Forecast
+FAQ Question: RSS Feeds
+FAQ Question: Reports
+FAQ Question: Calibration
+FAQ Question: Insitu
+FAQ Question: Relative
+FAQ Question: Validation
+FAQ Question: Data Quality
+FAQ Question: Weather
+FAQ Question: Atlases
+FAQ Question: Tools
+FAQ Question: Sitemap
+FAQ Question: Help
+FAQ Question: What is MOSDAC?
+FAQ Question: https://mosdac.gov.in
+FAQ Question: How to be a registered user of MOSDAC?
+FAQ Question: I have registered on MOSDAC . i have received an email for email verification. But when I click the link, I get error message.
+FAQ Question: I have received a 'reset password mail' But when I click the link, I get error message.
+FAQ Question: I get error 'Invalid username or password' even though I provide correct credentials.
+FAQ Question: How to know forgot password?
+FAQ Question: How to change password?
+FAQ Question: I don't have username and password of MOSDAC. Can I download data?
+FAQ Question: How can I get near real time data without data ordering?
+FAQ Question: How in-situ data can be ordered/requested?
+FAQ Question: How Ordered and download the satellite data ?
+FAQ Question: sftp://ftp.mosdac.gov.in
+FAQ Question: ftp://ftp.mosdac.gov.in
+FAQ Question: Which duration data can be obtained from MOSDAC?
+FAQ Question: How many AWS are installed in each state of India?
+FAQ Question: Which duration data is available for AWS?
+FAQ Question: How to get description about a data product?
+FAQ Question: What datasets are available on MOSDAC?
+FAQ Question: I am a registered user of MOSDAC. When I download L1 data I get the message "Your account is configured to download this data with latency of  3 days. Please select date accordingly." How should I download data?
+FAQ Question: 
+FAQ Question: 
+FAQ Question: 
+FAQ Question: 
+FAQ Question: Feedback
+FAQ Question: About Us
+FAQ Question: Contact Us
+FAQ Question: Copyright Policy
+FAQ Question: Data Access Policy
+FAQ Question: Hyperlink Policy
+FAQ Question: Privacy Policy
+FAQ Question: Website Policies
+FAQ Question: Terms & Conditions
+FAQ Question: FAQs
+FAQ Question: 
+FAQ Question: 
+FAQ Question: 
+FAQ Question: 
+FAQ Question: 
+FAQ Question: 

@@ -1,0 +1,30 @@
+Description: IDV Plugin for INSAT-3D | 3DR Data Products
+Download URL: 'https://mosdac.gov.in/software/INSAT_IDV_PLUGIN.jar'
+
+---
+Description: Atmospheric Correction Model for Resourcesat-2 AWiFS data (SACRS2)
+Download URL: 'https://mosdac.gov.in/software/SACRS2_Package.rar'
+
+---
+Description: Megha Tropiques batch mode HDF5 to Binary/ASCII converter
+Download URL: 'https://mosdac.gov.in/software/mt-hdf-bin-linux.zip'
+
+---
+Description: Megha Tropiques HDF Viewer
+Download URL: 'https://mosdac.gov.in/software/hdftool-linux.zip'
+
+---
+Description: Megha Tropiques batch mode HDF5 to Binary/ASCII converter
+Download URL: 'https://mosdac.gov.in/software/mt-hdf-bin-txt.zip'
+
+---
+Description: Megha Tropiques HDF Viewer
+Download URL: '	https://mosdac.gov.in/software/HdfTool.zip'
+
+---
+Description: HDF5 TO ASCII converter for Kalpana1-VHRR PR products
+Download URL: '	https://mosdac.gov.in/software/PR_hdf_ascii.tar'
+
+---
+Description: HDF5 TO ASCII converter for Kalpana1-VHRR DP products
+Download URL: No download URL available
